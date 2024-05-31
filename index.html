@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seal Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Welcome to the Seal Showcase</h1>
+        </header>
+        <main>
+            <div class="seal-container" id="sealContainer">
+                <!-- Seal cards will be added here by JavaScript -->
+                <div class="seal-card add-card" id="addCard">
+                    <span>+</span>
+                    <p>Click to add a new seal</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Seal Showcase. All rights reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Add a New Seal</h2>
+            <form id="sealForm">
+                <label for="sealTitle">Title:</label>
+                <input type="text" id="sealTitle" name="sealTitle" required>
+                <label for="sealDescription">Description:</label>
+                <input type="text" id="sealDescription" name="sealDescription" required>
+                <label for="sealImage">Image:</label>
+                <input type="file" id="sealImage" name="sealImage" required>
+                <button type="submit">Add Seal</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

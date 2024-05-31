@@ -1,0 +1,145 @@
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #48cae4;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.seal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seal-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+}
+
+.seal-card img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.seal-card h2 {
+    margin: 15px;
+}
+
+.seal-card p {
+    margin: 15px;
+    color: #555;
+}
+
+.add-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    color: #777;
+}
+
+.add-card span {
+    font-size: 10em;
+    line-height: 0.7em;
+}
+
+footer {
+    background-color: #48cae4;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#sealForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#sealForm label {
+    margin-top: 10px;
+}
+
+#sealForm input[type="text"],
+#sealForm input[type="file"] {
+    margin-top: 5px;
+}
+
+#sealForm button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #48cae4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sealForm button:hover {
+    background-color: #36a9c9;
+}
