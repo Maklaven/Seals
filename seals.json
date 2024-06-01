@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Seal 1",
+        "description": "This is Seal 1. It loves to swim and play.",
+        "imageUrl": "uploads/seal1.jpg"
+    },
+    {
+        "name": "Seal 2",
+        "description": "Seal 2 enjoys lounging on the beach.",
+        "imageUrl": "uploads/seal2.jpg"
+    },
+    {
+        "name": "Seal 3",
+        "description": "Seal 3 is known for its playful nature.",
+        "imageUrl": "uploads/seal3.jpg"
+    }
+]
