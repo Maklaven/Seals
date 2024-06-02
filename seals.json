@@ -1,17 +1,20 @@
 [
-    {
-        "name":"Seal 1",
-        "description": "This is Seal 1. It loves to swim and play.",
-        "imageUrl": "uploads/seal1.jpg"
-    },
-    {
-        "name": "Seal 2",
-        "description": "Seal 2 enjoys lounging on the beach.",
-        "imageUrl": "uploads/seal2.jpg"
-    },
-    {
-        "name": "Seal 3",
-        "description": "Seal 3 is known for its playful nature.",
-        "imageUrl": "uploads/seal3.jpg"
-    }
+  {
+    "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+    "name": "Seal 1",
+    "description": "This is Seal 1. It loves to swim and play.",
+    "imageUrl": "uploads/seal1.jpg"
+  },
+  {
+    "id": "7h8i9j0k-1l2m-3n4o-5p6q-7r8s9t0u1v2w",
+    "name": "Seal 2",
+    "description": "Seal 2 enjoys lounging on the beach.",
+    "imageUrl": "uploads/seal2.jpg"
+  },
+  {
+    "id": "3n4o5p6q-7r8s-9t0u-1v2w-3x4y5z6a7b8c",
+    "name": "Seal 3",
+    "description": "Seal 3 is known for its playful nature.",
+    "imageUrl": "uploads/seal3.jpg"
+  }
 ]

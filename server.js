@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
+const { v4: uuidv4 } = require('uuid');
 
 const app = express();
 const PORT = 3000;
@@ -63,7 +64,12 @@ app.post('/api/seals', upload.single('sealImage'), (req, res) => {
         }
 
         const seals = readSealsData();
-        const newSeal = { name, description, imageUrl };
+        const newSeal = {
+            id: uuidv4(), 
+            name,
+            description,
+            imageUrl
+        };
         seals.push(newSeal);
         writeSealsData(seals);
 
