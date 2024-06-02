@@ -17,14 +17,13 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Serve static files from the 'public' and 'uploads' folders
+// Serve static files from the 'public' folder
 app.use(express.static(path.join(__dirname, '../public')));
-app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 // Configure multer for file uploads
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, '../uploads/'));
+        cb(null, path.join(__dirname, '../public/uploads/'));
     },
     filename: (req, file, cb) => {
         cb(null, `${Date.now()}-${file.originalname}`);
